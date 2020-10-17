@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  nginx:
+     container_name: app1
+     hostname: "app1.opstree.com"
+     image: nginxproxy
+     ports:
+       - "80:80"
+       - "443:443"
+     restart: always
+     links:
+       - tomcat
+       - node
+
+  tomcat:
+     container_name: app2
+     hostname: "app2.opstree.com"
+     image: retomcat
+     restart: always
+
+  node:
+     container_name: app3
+     hostname: "app3.opstree.com"
+     image: hello-world 
+     expose:
+       - "9000"
+     restart: always
+     
