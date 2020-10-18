@@ -23,7 +23,7 @@ Step5.) Hurray !! All Done Now Check
 
 -------------------------------------------------------------
 
-[root@server opstree]# curl app1.opstree.com:80
+**[root@server opstree]# curl app1.opstree.com:80**
 
 <!DOCTYPE html>
 <html>
@@ -55,7 +55,7 @@ Commercial support is available at
 
 ---------------------------------------------------------------
 
-[root@server opstree]# curl app2.opstree.com:80
+**[root@server opstree]# curl app2.opstree.com:80**
 
 <html>
 <head>
@@ -89,6 +89,6 @@ outlined in the Application Developer's Guide.
 
 ----------------------------------------------------------------------- 
 
-[root@server opstree]# curl app3.opstree.com:80
+**[root@server opstree]# curl app3.opstree.com:80**
 Hello World!
 [root@server opstree]#
